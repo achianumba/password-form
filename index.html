@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="og:title" content="Password form" />
+    <meta
+      name="og:description"
+      content="Password form | A login page designed by Ildiko Gaspar and coded by Arinze
+    Chianumba"
+    />
+    <meta name="og:type" content="website" />
+    <meta
+      name="og:image"
+      content="https://achianumba.github.io/password-form/images/social-card.png"
+    />
+    <meta name="og:url" content="https://achianumba.github.io" />
+
+    <meta name="twitter:title" content="Password form" />
+    <meta
+      name="twitter:description"
+      content=" Password form | A login page
+    designed by Ildiko Gaspar and coded by Arinze Chianumba"
+    />
+    <meta
+      name="twitter:image"
+      content="https://achianumba.github.io/password-form/images/social-card.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@github" />
+    <meta name="twitter:creator" content="@justArRinze" />
+
+    <title>
+      Password form | A login page designed by Ildiko Gaspar and coded by Arinze
+      Chianumba
+    </title>
+
+    <link rel="stylesheet" href="/main.css" />
+    <script src="/main.css" defer></script>
+  </head>
+  <body>
+    <form action="#" class="login-form">
+      <p class="login-form__task">Enter your password</p>
+
+      <div class="login-form__user">
+        <img
+          src="/images/user-image.png"
+          alt="user image"
+          class="user__image"
+        />
+        <div class="user__info">
+          <p class="user__account-type">Business Account</p>
+          <p class="user__name">Sarah Bills</p>
+        </div>
+      </div>
+
+      <div class="login-form__control password-control">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="password" id="password" />
+        <img
+          src="/images/icon-show-password.svg"
+          alt="toggle visibility"
+          class="toggle-password-visibility"
+        />
+      </div>
+
+      <div class="login-form-control stay-signed-in">
+        <input
+          type="checkbox"
+          name="stay-signed"
+          id="stay-signed-in-checkbox"
+          class="stay-signed-in-checkbox"
+        />
+        <label for="stay-signed-in">Stay signed in</label>
+      </div>
+
+      <button type="submit" class="login-form__submit"> Continue </button>
+
+      <a href="#" class="login-form__reset-password">Reset password</a>
+    </form>
+  </body>
+</html>

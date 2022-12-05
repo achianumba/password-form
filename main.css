@@ -1,0 +1,8 @@
+:root {
+  --text-1: 0.875rem;
+  --text-2: 1rem;
+  --text-3: 1.125rem;
+  --text-4: 2rem;
+  --light: hsl(210, 12%, 97%);
+  --text-dark: hsl(216, 61%, 19%);
+}
