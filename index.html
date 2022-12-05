@@ -8,8 +8,7 @@
     <meta name="og:title" content="Password form" />
     <meta
       name="og:description"
-      content="Password form | A login page designed by Ildiko Gaspar and coded by Arinze
-    Chianumba"
+      content="Password form | A login page designed by coded by Arinze Chianumba"
     />
     <meta name="og:type" content="website" />
     <meta
@@ -21,8 +20,7 @@
     <meta name="twitter:title" content="Password form" />
     <meta
       name="twitter:description"
-      content=" Password form | A login page
-    designed by Ildiko Gaspar and coded by Arinze Chianumba"
+      content=" Password form | A login page designed by coded by Arinze Chianumba"
     />
     <meta
       name="twitter:image"
@@ -33,48 +31,95 @@
     <meta name="twitter:creator" content="@justArRinze" />
 
     <title>
-      Password form | A login page designed by Ildiko Gaspar and coded by Arinze
-      Chianumba
+      Password form | A login page designed by coded by Arinze Chianumba
     </title>
 
-    <link rel="stylesheet" href="/main.css" />
-    <script src="/main.css" defer></script>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <form action="#" class="login-form">
-      <p class="login-form__task">Enter your password</p>
+      <p class="login-form__item login-form__task">Enter your password</p>
 
-      <div class="login-form__user">
+      <div class="login-form__item login-form__user">
         <img src="images/user-image.png" alt="user image" class="user__image" />
-        <div class="user__info">
-          <p class="user__account-type">Business Account</p>
-          <p class="user__name">Sarah Bills</p>
+        <div class="user-info">
+          <p class="user-info__account-type">Business Account</p>
+          <p class="user-info__name">Sarah Bills</p>
         </div>
       </div>
 
-      <div class="login-form__control password-control">
-        <label for="password">Password</label>
-        <input type="password" name="password" class="password" id="password" />
-        <img
-          src="images/icon-show-password.svg"
-          alt="toggle visibility"
-          class="toggle-password-visibility"
-        />
+      <div class="login-form__item password__wrapper">
+        <label for="password__input" class="password__label">Password</label>
+        <div class="password__input__container">
+          <div class="password__input__and__icon">
+            <img
+              src="images/icon-password.svg"
+              alt="password icon"
+              class="password__input__icon"
+            />
+
+            <input
+              type="password"
+              name="password"
+              class="password__input"
+              id="password__input"
+              placeholder="**************"
+            />
+          </div>
+
+          <img
+            role="button"
+            src="images/icon-show-password.svg"
+            alt="toggle visibility"
+            class="toggle-password-visibility"
+          />
+        </div>
       </div>
 
-      <div class="login-form-control stay-signed-in">
-        <input
-          type="checkbox"
-          name="stay-signed"
-          id="stay-signed-in-checkbox"
-          class="stay-signed-in-checkbox"
-        />
-        <label for="stay-signed-in">Stay signed in</label>
+      <div class="login-form__item stay-signed-in__and__continue__wrapper">
+        <div class="stay-signed-in">
+          <input
+            type="checkbox"
+            name="stay-signed-in"
+            id="stay-signed-in__checkbox"
+            class="stay-signed-in__checkbox"
+          />
+          <div class="stay-signed-in__switch" role="button">
+            <div class="stay-signed-in__switch__toggle"></div>
+          </div>
+          <label for="stay-signed-in__checkbox" class="stay-signed-in__label"
+            >Stay signed in</label
+          >
+        </div>
+
+        <button type="submit" class="login-form__continue">Continue</button>
       </div>
 
-      <button type="submit" class="login-form__submit"> Continue </button>
-
-      <a href="#" class="login-form__reset-password">Reset password</a>
+      <a href="#" class="login-form__item login-form__reset-password"
+        >Reset password</a
+      >
     </form>
+
+    <footer class="attribution">
+      <p class="attribution__text"
+        >Designed by
+        <a
+          href="https://www.uidesigndaily.com/about"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="attribution__link"
+          >Ildiko Gaspar</a
+        >
+        and coded by
+        <a
+          href="https://github.com/achianumba"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="attribution__link"
+          >Arinze Chianumba</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
